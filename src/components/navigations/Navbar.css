@@ -1,0 +1,47 @@
+.navbar_prov {
+  width: 100%;
+  height: auto;
+  background-color: #293846 !important;
+  color: white !important;
+}
+
+.navbar_prov img {
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+.nav-link:hover {
+  scale: 1.2;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+}
+
+.brand .collapse {
+  flex: 0.2;
+  display: grid;
+  place-content: center;
+}
+
+.brand .logo {
+  flex: 0.8;
+  display: grid;
+  place-content: center;
+}
