@@ -25,7 +25,6 @@ type Dimension = {
 function NavbarProv() {
   const dispatch = useAppDispatch();
   const { isOpen } = useAppSelector((state) => state.nav);
-  const [hide, setHide] = useState<boolean>(true);
   const [dimension, setDimension] = useState<Dimension>({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -43,9 +42,7 @@ function NavbarProv() {
   }, []);
 
   useEffect(() => {
-    dimension.width <= 500
-      ? dispatch(toggle(false)) && setHide(false)
-      : dispatch(toggle(true)) && setHide(true);
+    dimension.width <= 500 ? dispatch(toggle(false)) : dispatch(toggle(true));
   }, [dimension, dispatch]);
 
   return (
@@ -56,7 +53,7 @@ function NavbarProv() {
             <div
               className="collapse"
               onClick={() => dispatch(toggle(!isOpen))}
-              style={{ display: hide ? "none" : "block" }}
+              // style={{ display: hide ? "none" : "block" }}
             >
               {isOpen ? (
                 <TbLayoutSidebarLeftCollapse size={"30px"} />

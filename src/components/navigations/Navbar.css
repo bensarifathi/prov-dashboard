@@ -7,7 +7,7 @@
 
 .navbar_prov img {
   width: 100px;
-  height: 35px;
+  height: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -37,11 +37,11 @@
 .brand .collapse {
   flex: 0.2;
   display: grid;
-  place-content: center;
+  place-content: start;
 }
 
 .brand .logo {
   flex: 0.8;
   display: grid;
-  place-content: center;
+  place-content: start;
 }
